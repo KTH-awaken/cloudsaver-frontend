@@ -1,5 +1,11 @@
 # cloudsaver-frontend
 
+![MacBook Pro 14_ - Landingpage](https://github.com/KTH-awaken/cloudsaver-frontend/assets/100699584/77915040-7fcd-42e0-a43a-3347dba14432)
+
+![MacBook Pro 14_ - Tutorial](https://github.com/KTH-awaken/cloudsaver-frontend/assets/100699584/d6906ef2-640e-4a48-a3b3-a49aad7cee8c)
+
+![MacBook Pro 14_ - Overview](https://github.com/KTH-awaken/cloudsaver-frontend/assets/100699584/09a56af4-fb76-4c66-9e81-5a6637183708)
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
