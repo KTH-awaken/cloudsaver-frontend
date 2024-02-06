@@ -1,44 +1,42 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
-<style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
+<script setup>
+import { useRouter } from 'vue-router'
 
-h3 {
-  font-size: 1.2rem;
-}
+const router = useRouter()
 
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
+const steps = [
+  {
+    path: '/step1',
+    component: () => import('./Step1.vue')
+  },
+  {
+    path: '/step2',
+    component: () => import('./Step2.vue')
+  },
+  {
+    path: '/step3',
+    component: () => import('./Step3.vue')
+  }
+]
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
+// Function to move to the next step
+const nextStep = () => {
+  const currentPath = router.currentRoute.value.path
+  const currentIndex = steps.findIndex(step => step.path === currentPath)
+  if (currentIndex !== -1 && currentIndex < steps.length - 1) {
+    router.push(steps[currentIndex + 1].path)
+  } else {
+    console.log('End of tutorial')
+    // You can handle what happens when the tutorial ends
   }
 }
+</script>
+
+<style scoped>
+/* Add your scoped styles here */
 </style>
