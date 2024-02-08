@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-import './assets/main.css'
 
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
-=======
 import { createApp } from "vue";
 import App from "./App.vue";
 import store from "./store";
@@ -19,4 +12,3 @@ appInstance.use(store);
 appInstance.use(router);
 appInstance.use(ArgonDashboard);
 appInstance.mount("#app");
->>>>>>> other-main/main
