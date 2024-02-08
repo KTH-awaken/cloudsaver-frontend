@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import ArgonAvatar from "@/components/ArgonAvatar.vue";
+import ArgonAvatar from "@/TempletComponents/ArgonAvatar.vue";
 import img from "../../assets/img/card-visa.jpg";
 import img1 from "../../assets/img/logos/mastercard.png";
 

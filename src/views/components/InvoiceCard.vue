@@ -86,7 +86,7 @@
 </template>
 
 <script>
-import ArgonButton from "@/components/ArgonButton.vue";
+import ArgonButton from "@/TempletComponents/ArgonButton.vue";
 
 export default {
   name: "invoice-card",

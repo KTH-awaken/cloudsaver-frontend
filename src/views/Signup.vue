@@ -132,9 +132,9 @@
 <script>
 import Navbar from "@/examples/PageLayout/Navbar.vue";
 import AppFooter from "@/examples/PageLayout/Footer.vue";
-import ArgonInput from "@/components/ArgonInput.vue";
-import ArgonCheckbox from "@/components/ArgonCheckbox.vue";
-import ArgonButton from "@/components/ArgonButton.vue";
+import ArgonInput from "@/TempletComponents/ArgonInput.vue";
+import ArgonCheckbox from "@/TempletComponents/ArgonCheckbox.vue";
+import ArgonButton from "@/TempletComponents/ArgonButton.vue";
 const body = document.getElementsByTagName("body")[0];
 
 export default {
